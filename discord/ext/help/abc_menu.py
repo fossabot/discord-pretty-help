@@ -9,7 +9,7 @@ from discord.ext import commands
 
 class PrettyMenu(metaclass=ABCMeta):
     """
-    A base class for menus used with PrettyHelp
+    A base class for menus used with CustomHelpFormatter
     """
 
     async def send_pages(
@@ -18,5 +18,5 @@ class PrettyMenu(metaclass=ABCMeta):
         destination: discord.abc.Messageable,
         pages: List[discord.Embed],
     ):
-        """The function called by :class:`PrettyHelp` that will send pages"""
+        """The function called by :class:`CustomHelpFormatter` that will send pages"""
         pass

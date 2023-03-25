@@ -18,9 +18,9 @@ Example of how to use it:
 
 ```python
 from discord.ext import commands
-from pretty_help import PrettyHelp
+from pretty_help import CustomHelpFormatter
 
-bot = commands.Bot(command_prefix="!", help_command=PrettyHelp())
+bot = commands.Bot(command_prefix="!", help_command=CustomHelpFormatter())
 ```
 
 
@@ -29,7 +29,7 @@ bot = commands.Bot(command_prefix="!", help_command=PrettyHelp())
 
 - `color` - Set the default embed color
 - `delete_invoke` - Delete the message that invoked the help command. Requires message delete permission. Defaults is `False`
-- `ending_note` - Set the footer of the embed. Ending notes are fed a `commands.Context` (`ctx`) and a `PrettyHelp` (`help`) instance for more advanced customization.
+- `ending_note` - Set the footer of the embed. Ending notes are fed a `commands.Context` (`ctx`) and a `CustomHelpFormatter` (`help`) instance for more advanced customization.
 - `image_url` - The url of the image to be used on the embed
 - `index_title` - Set the index page name default is *"Categories"*
 - `menu` - The menu to use for navigating pages. Uses a `pretty_help.PrettyMenu()` instance. Default is `pretty_help.AppMenu()`
@@ -64,7 +64,7 @@ By default, the help will just pick a random color on every invoke. You can chan
 ```python
 
 from discord.ext import commands
-from pretty_help import EmojiMenu, PrettyHelp
+from pretty_help import EmojiMenu, CustomHelpFormatter
 
 # ":discord:743511195197374563" is a custom discord emoji format. Adjust to match your own custom emoji.
 menu = EmojiMenu(page_left="\U0001F44D", page_right="👎", remove=":discord:743511195197374563", active_time=5)
@@ -74,7 +74,7 @@ ending_note = "The ending note from {ctx.bot.user.name}\nFor command {help.clean
 
 bot = commands.Bot(command_prefix="!")
 
-bot.help_command = PrettyHelp(menu=menu, ending_note=ending_note)
+bot.help_command = CustomHelpFormatter(menu=menu, ending_note=ending_note)
 ```
 
 The basic `help` command will break commands up by cogs. Each cog will be a different page. Those pages can be navigated. 

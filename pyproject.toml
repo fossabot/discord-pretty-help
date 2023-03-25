@@ -8,7 +8,7 @@ license = "MIT"
 repository = "https://github.com/stroupbslayen/discord-pretty-help"
 keywords=["discord", "discord.py", "discord bot"]
 packages = [
-    {include = "pretty_help"}
+    {include = "discord.ext.help"}
 ]
 
 [tool.poetry.dependencies]
