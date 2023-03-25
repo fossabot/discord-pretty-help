@@ -7,7 +7,7 @@ import discord
 import dotenv
 from discord import app_commands
 from discord.ext import commands
-from pretty_help import EmojiMenu, CustomHelpFormatter, AppNav, AppMenu
+from pretty_help import EmojiMenu, PrettyHelp, AppNav, AppMenu
 
 
 dotenv.load_dotenv("./tests/.env")
@@ -29,7 +29,7 @@ bot = commands.Bot(
     command_prefix="!",
     description="this is the bots descripton",
     intents=intents,
-    help_command=CustomHelpFormatter(
+    help_command=PrettyHelp(
         ending_note=ending_note,
         menu=menu,
         # image_url="https://assets-global.website-files.com/6257adef93867e50d84d30e2/62f0a9e560a799075a4e0cea_Discord-Logo-White%20(3).png",  # white discord icon
@@ -47,7 +47,7 @@ def use_emoji_menu():
         active_time=60,
         delete_after_timeout=False,
     )
-    bot.help_command = CustomHelpFormatter(menu=menu, ending_note=ending_note)
+    bot.help_command = PrettyHelp(menu=menu, ending_note=ending_note)
 
 
 ####### Text command Stuff

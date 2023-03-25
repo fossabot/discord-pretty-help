@@ -13,7 +13,7 @@ from .abc_menu import PrettyMenu
 
 
 class EmojiMenu(PrettyMenu):
-    """The default navigation menu for CustomHelpFormatter.
+    """The default navigation menu for PrettyHelp.
 
     Accepts standard emojis in multiple ways:
         - Emoji:: "👍"
