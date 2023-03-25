@@ -49,8 +49,8 @@ class AppNav(View):
                 )
 
     @discord.ui.button(
-        label="Previous",
-        style=discord.ButtonStyle.success,
+        emoji="<a:2b_arrow_1:1089313333162811462>",
+        style=discord.ButtonStyle.secondary,
         row=1,
         custom_id="pretty_help:previous",
     )
@@ -59,8 +59,8 @@ class AppNav(View):
         await self.update(interaction)
 
     @discord.ui.button(
-        label="Next",
-        style=discord.ButtonStyle.primary,
+        emoji="<a:2b_arrow_2:1089313415664771214>",
+        style=discord.ButtonStyle.secondary,
         row=1,
         custom_id="pretty_help:next",
     )
@@ -69,7 +69,7 @@ class AppNav(View):
         await self.update(interaction)
 
     @discord.ui.button(
-        label="Delete",
+        emoji="<:melon_red_cross:1063117210589089852>",
         style=discord.ButtonStyle.danger,
         row=1,
         custom_id="pretty_help:delete",
