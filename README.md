@@ -1,4 +1,5 @@
-![version](https://img.shields.io/pypi/v/discord-pretty-help) ![python](https://img.shields.io/badge/python-3.8+-blue)
+![version](https://img.shields.io/pypi/v/discord-pretty-help) ![python](https://img.shields.io/badge/python-3.8+-blue)[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Finthedark-org%2Fdiscord-pretty-help.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Finthedark-org%2Fdiscord-pretty-help?ref=badge_shield)
+
 
 # discord-pretty-help
 
@@ -97,3 +98,6 @@ The basic `help` command will break commands up by cogs. Each cog will be a diff
 
 ## Forks for other discord.py based libraries (maintanance not monitored):
 * [nextcord-pretty-help](https://github.com/squigjess/nextcord-pretty-help)
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Finthedark-org%2Fdiscord-pretty-help.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Finthedark-org%2Fdiscord-pretty-help?ref=badge_large)
